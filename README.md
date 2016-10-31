@@ -23,18 +23,8 @@ There are a bunch of audio and video sources where you can try to obtain streams
 **Playing streams requires authentication!** Use your normal camera user account. **The _password_ must be _base64 encoded_.** In the examples here the standard password _admin_ (YWRtaW4= in base64) is used.
 
 ## List of available Video Sources
-* http://[ipofcamera]:8080/stream/video/mjpeg
-  * `cvlc --network-caching=0 http://admin:YWRtaW4=@[ipofcamera]:8080/stream/video/mjpeg`
-* http://[ipofcamera]:8080/stream/video/h264
-* http://[ipofcamera]:8080/stream/video/h264_mixed
-* http://[ipofcamera]:8080/stream/video/mjpeg_mixed
-* http://[ipofcamera]:8080/stream/video/h264_previous
-* rtsp://admin:admin@[device-ip]:554/h264_vga.sdp
-  * `vlc --started-from-file rtsp://admin:admin@[device-ip]:554/h264_vga.sdp`
-* rtmp://[device-ip]:1935/stream/video/h264
-  * `ffplay rtmp://192.168.1.49:1935/stream/video/h264`
-  * video and audio stream
-  * Works without authentication! (WTF?)
+  * `cvlc --network-caching=0 http://admin:YWRtaW4=@[ipofcamera]:8080/stream/getvideo`
+* http://admin:ywrtaw4=@[device-ip]:8080/stream/getvideo
 
 ## List of available Audio Sources
 * http://[ipofcamera]:8080/stream/audio/wavpcm
