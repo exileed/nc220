@@ -24,7 +24,7 @@ There are a bunch of audio and video sources where you can try to obtain streams
 
 ## List of available Video Sources
   * `cvlc --network-caching=0 http://admin:YWRtaW4=@[ipofcamera]:8080/stream/getvideo`
-* http://admin:ywrtaw4=@[device-ip]:8080/stream/getvideo
+* http://admin:YWRtaW4=@[device-ip]:8080/stream/getvideo
 
 ## List of available Audio Sources
 * http://[ipofcamera]:8080/stream/audio/wavpcm
