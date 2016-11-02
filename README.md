@@ -27,13 +27,7 @@ There are a bunch of audio and video sources where you can try to obtain streams
 * http://admin:YWRtaW4=@[device-ip]:8080/stream/getvideo
 
 ## List of available Audio Sources
-* http://[ipofcamera]:8080/stream/audio/wavpcm
-* http://[ipofcamera]:8080/stream/audio/wavpcmblock
-* http://[ipofcamera]:8080/stream/audio/mpegmp2
-  * `mplayer -nocache -user admin -passwd YWRtaW4= "http://[ipofcamera]:8080/stream/audio/mpegmp2"`
-* http://[ipofcamera]:8080/stream/audio/mpegmp2block
-* http://[ipofcamera]:8080/stream/audio/mpegaac
-* http://[ipofcamera]:8080/stream/audio/mpegaacblock
+* http://admin:YWRtaW4=@[device-ip]:8080/stream/getaudio
 
 # Getting Still Images
 * wget --user=admin --password=YWRtaW4= http://[ipofcamera]:8080/stream/snapshot.jpg
